@@ -7,7 +7,7 @@ day            = 1
 
 while num_bills * bill_thickness < sears_height:
     print(day, num_bills, num_bills * bill_thickness)
-    day = days + 1
+    day = days + 1 #variable days not defined causes an error
     num_bills = num_bills * 2
 
 print('Number of days', day)
