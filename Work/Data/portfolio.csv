@@ -6,3 +6,22 @@ name,shares,price
 "GE",95,40.37
 "MSFT",50,65.10
 "IBM",100,70.44
+
+
+#pcost.py
+
+total_cost = 0.0
+
+with open('C:/Users/hugo-/Downloads/port.csv', 'rt') as f:
+    headers = next(f)
+    for line in f:
+        row = line.split(',')
+        nshares = int(row[1])
+        cost = float(row[2])
+        total_cost=(total_cost+round(nshares*cost,2))
+
+print('Total cost', total_cost)
+        
+        
+        
+        
